@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/0dd1095222.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div align="center">
-    <h1>todos</h1>
+  <div class="">
+    <h1 class="todo">todos</h1>
+    <div class="input_container">
+      <input type="text" placeholder="What needs to be done?">
+      <i class="fas"></i>
+    </div>
+    <ul class="list">
+    </ul>
+    <div class="foot">
+      <div class="footer1">
+        <span class="item_count"> 0 </span><span class="item">item's left</span></span>
+        <span class="all">All</span>
+        <span class="active">Active</span>
+        <span class="completed">Completed</span>
+        <span class="clear_completed">Clear completed</span>
+      </div>
+      <div class="footer1"></div>
+      <div class="footer2"></div>
+      <div class="footer3"></div>
+    </div>
+    <footer class="footer">
+      <p>Double-click to edit a todo</p>
+      <p>Created by <span class="footer-content">Piyush</span></p>
+      <p>Refactored by <span class="footer-content">Ankit Sinha</span></p>
+      <p>Part of <span class="footer-content">TodoMVC</span></p>
+    </footer>
   </div>
-  <div>
-    <button onclick="handlers. displayTodosButton()">Display Todos</button>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
-  </div>
-  <div>
-    <button onclick="handlers.addTodos()">Add</button>
-    <input type="text" id="addTodos">
-  </div>
-  <div>
-    <button onclick="handlers.changeTodo()">ChangeTodo</button>
-    <input type="number" id="changeTodoPosition">
-    <input type="text" id="changeTodoText">
-  </div>
-
-  <div>
-    <button onclick=" handlers.deleteTodos()">Delete</button>
-    <input type='number' id="deleteTodoPosition">
-  </div>
-  <div>
-    <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-    <input type='number' id="toggleCompletedPosition">
-  </div>
-
-  <ul>
-
-  </ul>
-
-
-
   <script src="main.js"></script>
-
 </body>
 
 </html>
